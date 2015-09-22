@@ -21,11 +21,26 @@ app.on('window-all-closed', function() {
 // initialization and is ready to create browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({
-    width: 980,
-    height: 880,
-    kiosk: true
-  });
+  var Screen = require('screen');
+
+    var size = Screen.getPrimaryDisplay().size;
+
+    var width = size.width;
+    var height = size.height;
+
+    // Create the browser window.
+    mainWindow = new BrowserWindow({
+      'width': width,
+      'height': height,
+      'max-width': width,
+      'max-height': height,
+      'fullscreen': true,
+      'frame': false,
+      'kiosk': true,
+      'transparent': true,
+      'show': true,
+      'resizable': false
+    });
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
