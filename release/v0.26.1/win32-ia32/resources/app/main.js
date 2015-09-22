@@ -40,7 +40,7 @@ app.on('ready', function() {
       'transparent': true,
       'show': true,
       'resizable': false
-    });
+    }); 
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
