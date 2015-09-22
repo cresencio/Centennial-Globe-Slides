@@ -874,6 +874,8 @@ hr {
         #abroad-slides #slide-1 .caption {
           bottom: 60px;
           width: 700px;
+          padding-left: 10px;
+          padding-right: 10px; 
           background: rgba(0, 0, 0, 0.5);
           color: #e5e5e5;
           margin: 0 auto; }
@@ -899,10 +901,10 @@ hr {
 
 
                   #taos-slides #slide-2 {
-                    background: url(../img/Abroad/taos-2.jpg); }
+                    background: url(../img/Taos/taos-2.jpg); }
 
                     #taos-slides #slide-3 {
-                      background: url(../img/Abroad/taos-3.jpg); }
+                      background: url(../img/Taos/taos-3.jpg); }
 
                       #taos-slides #slide-4 {
-                        background: url(../img/Abroad/taos-4.jpg); }
+                        background: url(../img/Taos/taos-4.jpg); }
